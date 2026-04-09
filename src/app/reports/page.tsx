@@ -75,7 +75,7 @@ export default function ReportsPage() {
                   <XAxis dataKey="q" tick={{ fill: '#a3aac4', fontSize: 11 }} axisLine={false} tickLine={false} />
                   <YAxis tick={{ fill: '#a3aac4', fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={(v) => `$${v}M`} />
                   <Tooltip
-                    formatter={(v: number) => [`$${v}M`, 'Revenue']}
+                    formatter={(v: any) => [`$${v}M`, 'Revenue']}
                     contentStyle={{ background: '#141f38', border: '1px solid rgba(64,72,93,0.4)', borderRadius: 12, color: '#dee5ff' }}
                   />
                   <Bar dataKey="value" radius={[6, 6, 0, 0]} fill="url(#barGrad)" />
