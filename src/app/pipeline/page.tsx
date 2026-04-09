@@ -2,7 +2,24 @@
 
 import { Plus, Sparkles, Filter, Search } from 'lucide-react';
 
-const stages = [
+type Deal = {
+  title: string;
+  sub: string;
+  value: string;
+  score: number;
+  days: number;
+  initials: string;
+  urgent?: boolean;
+};
+
+type Stage = {
+  id: string;
+  label: string;
+  color: string;
+  deals: Deal[];
+};
+
+const stages: Stage[] = [
   {
     id: 'discovery',
     label: 'Discovery',
